@@ -38,7 +38,7 @@ SELECT SUM(Quantity)
   
   */
 
-  SELECT SUM(Quantity)
+  /* SELECT SUM(Quantity)
   FROM [KCC].[dbo].[Order_Product]
   WHERE CookieID = 2;
   SELECT SUM(Quantity)
@@ -51,7 +51,7 @@ SELECT SUM(Quantity)
   FROM [KCC].[dbo].[Order_Product]
   WHERE CookieID = 5;
 
-  --This doesn't look efficient. I'd rather write it as a loop.
+  --This doesn't look efficient. I'd rather write it as a loop. */
 
   Declare @i INT = 1;
   Declare @CookieIDcount INT
@@ -69,4 +69,5 @@ SELECT SUM(Quantity)
 	FROM [KCC].[dbo].[Order_Product]
 	WHERE CookieID = @i;
 	SET @i += 1;
+
   END
